@@ -5,6 +5,11 @@ import styles from '../styles/Home.module.css';
 export default function Home({ computers }) {
 	return (
 		<div className={styles.container}>
+			<Link href="/komputer/dodaj" passHref>
+				<button className={styles.buttonAdd}>
+					<a>Dodaj laptopa</a>
+				</button>
+			</Link>
 			{computers.map((e) => (
 				<Link key={e.id} href={`/komputer/${e.id}`} passHref>
 					<button className={styles.button}>

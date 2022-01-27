@@ -7,7 +7,8 @@
 	flex-direction: column;
 }
 
-.button {
+.button,
+.buttonAdd {
 	padding: 1rem;
 	background-color: #ffffff;
 	outline: none;
@@ -15,10 +16,20 @@
 	margin-bottom: 1rem;
 	cursor: pointer;
 }
+
 .button:last-child {
 	padding: 1rem;
 	margin-bottom: 0;
 }
-.button:hover {
+
+.button:hover,
+.buttonAdd:hover {
 	background-color: #bdbdbd;
+}
+
+.buttonAdd {
+	width: fit-content;
+	margin-bottom: 1rem;
+	padding: calc(1rem / 2);
+	align-self: center;
 }

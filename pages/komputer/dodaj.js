@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 import styles from '../../styles/ComputerCreate.module.css';
 
@@ -29,6 +30,11 @@ function ComputerCreate() {
 
 	return (
 		<div className={styles.container}>
+			<Link href="/" passHref>
+				<button className={styles.buttonBack}>
+					<a>Powrót</a>
+				</button>
+			</Link>
 			<form onSubmit={handleSubmit} className={styles.form}>
 				<input
 					type="text"
