@@ -1,4 +1,4 @@
-export default function Komputer({ computers }) {
+export default function SingleComputer({ computers }) {
 	return (
 		<div>
 			<div>{computers.name}</div>

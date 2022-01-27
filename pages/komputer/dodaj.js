@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import SingleComputer from './[id]';
 
 const initialValue = { name: '', description: '', price: '' };
 
-function Blog() {
+function ComputerCreate() {
 	const [inputValue, setInputValue] = useState(initialValue);
 
 	const handleSubmit = (e) => {
@@ -53,4 +54,4 @@ function Blog() {
 	);
 }
 
-export default Blog;
+export default SingleComputer;
