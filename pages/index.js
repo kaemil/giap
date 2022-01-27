@@ -20,9 +20,5 @@ export async function getStaticProps() {
 	const res = await fetch('http://localhost:3333/computers');
 	const computers = await res.json();
 
-	return {
-		props: {
-			computers,
-		},
-	};
+	return { props: { computers } };
 }

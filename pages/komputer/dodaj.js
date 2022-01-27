@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SingleComputer from './[id]';
 
 const initialValue = { name: '', description: '', price: '' };
 
@@ -54,4 +53,4 @@ function ComputerCreate() {
 	);
 }
 
-export default SingleComputer;
+export default ComputerCreate;
