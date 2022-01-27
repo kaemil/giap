@@ -1,0 +1,17 @@
+.container {
+	border: 1px solid #bdbdbd;
+	max-width: 250px;
+	padding: 1rem;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.p {
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.span {
+	font-weight: bold;
+}

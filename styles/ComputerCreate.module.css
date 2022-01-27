@@ -1,0 +1,47 @@
+.container {
+	border: 1px solid #bdbdbd;
+	max-width: 300px;
+	padding: 1rem;
+	margin: 100px auto;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input {
+	padding: calc(1rem / 2);
+	margin-bottom: 1rem;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.textarea {
+	font-family: -apple-system, sans-serif;
+	padding: calc(1rem / 2);
+	resize: none;
+	margin-bottom: 1rem;
+}
+
+.button {
+	width: fit-content;
+	padding: calc(1rem / 2);
+	align-self: center;
+	background-color: #ffffff;
+	outline: none;
+	border: 1px solid #bdbdbd;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #bdbdbd;
+}

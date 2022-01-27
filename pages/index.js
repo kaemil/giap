@@ -1,17 +1,17 @@
 import Link from 'next/link';
 
+import styles from '../styles/Home.module.css';
+
 export default function Home({ computers }) {
 	return (
-		<div>
-			<ul>
-				{computers.map((e) => (
-					<li key={e.id}>
-						<Link href={`/komputer/${e.id}`}>
-							<a>{e.name}</a>
-						</Link>
-					</li>
-				))}
-			</ul>
+		<div className={styles.container}>
+			{computers.map((e) => (
+				<Link key={e.id} href={`/komputer/${e.id}`} passHref>
+					<button className={styles.button}>
+						<a>{e.name}</a>
+					</button>
+				</Link>
+			))}
 		</div>
 	);
 }

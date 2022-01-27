@@ -1,0 +1,24 @@
+.container {
+	border: 1px solid #bdbdbd;
+	max-width: 200px;
+	padding: 1rem;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.button {
+	padding: 1rem;
+	background-color: #ffffff;
+	outline: none;
+	border: 1px solid #bdbdbd;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+.button:last-child {
+	padding: 1rem;
+	margin-bottom: 0;
+}
+.button:hover {
+	background-color: #bdbdbd;
+}

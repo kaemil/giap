@@ -1,9 +1,20 @@
+import styles from '../../styles/SingleComputer.module.css';
+
 function SingleComputer({ computers }) {
 	return (
-		<div>
-			<div>{computers.name}</div>
-			<div>{computers.description}</div>
-			<div>{computers.price}</div>
+		<div className={styles.container}>
+			<div>
+				<span className={styles.span}>Nazwa:</span>
+				<p className={styles.p}>{computers.name}</p>
+			</div>
+			<div>
+				<span className={styles.span}>Opis:</span>
+				<p className={styles.p}>{computers.description}</p>
+			</div>
+			<div>
+				<span className={styles.span}>Cena:</span>
+				<p className={styles.p}>{computers.price}</p>
+			</div>
 		</div>
 	);
 }

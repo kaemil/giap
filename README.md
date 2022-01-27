@@ -6,3 +6,5 @@ Powyżej wykonane zadanie rekrutacyjne.
 
 Napisz aplikację internetową z wykorzystaniem NextJS. Aplikacja ma być spisem
 komputerów.
+
+Przechowywanie danych json-server.
