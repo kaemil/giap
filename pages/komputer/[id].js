@@ -24,7 +24,7 @@ export async function getStaticProps(context) {
 	const res = await fetch(`http://localhost:3333/computers/${params.id}`);
 	const computers = await res.json();
 
-	return { props: { computers } };
+	return { props: { computers }, revalidate: 1 };
 }
 
 export async function getStaticPaths() {
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 		return { params: { id: e.id.toString() } };
 	});
 
-	return { paths, fallback: false };
+	return { paths, fallback: 'blocking' };
 }
 
 export default SingleComputer;
