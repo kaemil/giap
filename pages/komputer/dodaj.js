@@ -52,4 +52,5 @@ function Blog() {
 		</div>
 	);
 }
+
 export default Blog;
